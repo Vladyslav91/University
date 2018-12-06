@@ -20,7 +20,7 @@ import java.util.Date;
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class) // auto populate createAt/updateAt fields
 @JsonIgnoreProperties(value = {"createAt", "updateAt"}, allowGetters = true)
-public class AuditModel implements Serializable {
+class AuditModel implements Serializable {
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_at", nullable = false, updatable = false)

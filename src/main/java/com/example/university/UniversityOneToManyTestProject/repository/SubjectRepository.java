@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SubjectRepository extends JpaRepository<SubjectModel, Long> {
-    Page<SubjectModel> findByStudentId(Long studentId, Pageable pageable);
+//    Page<SubjectModel> findByStudentId(Long studentId, Pageable pageable);
 }
